@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Baloo+Bhaina+2&family=Noto+Serif+Display:ital,wght@1,100;1,200&family=Nunito:wght@300&family=Oswald:wght@300&family=Roboto&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    background: url('./img/bg\ \(1\).jpg'
+    );
+    height:100vh;
+    width:100%;
+    background-size: 100vw 100vh;
+    background-repeat:no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#score{
+    position:absolute;
+    top:9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+#highscore{
+    position: absolute;
+    top:59px;
+    right:140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+
+}
+#board{
+    background:linear-gradient(rgb(136, 183, 136),rgb(204, 204, 144));
+    width:90vmin;
+    height:92vmin;
+    border:2px solid #000;
+    display:grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(rgb(240, 128, 128),rgb(228, 228, 133));
+    border:2px solid purple;
+    transform:scale(1.02);
+    border-radius:9px;
+
+}
+.snake{
+background-color: purple;
+border:.25vmin solid white;
+border-radius: 12px;
+}
+.food{
+    background:linear-gradient(red,purple
+    );
+    border: .25vmin solid black;
+    border-radius:8px;
+}
